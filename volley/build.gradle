@@ -11,6 +11,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -18,17 +19,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    useLibrary 'org.apache.http.legacy'
+
     return 0
 }
 
 dependencies {
-    provided fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    provided 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:appcompat-v7:24.0.0'
     testCompile 'junit:junit:4.12'
-    compile 'com.google.code.gson:gson:2.7'
-    compile 'org.jetbrains:annotations-java5:15.0'
-    compile 'com.android.support:multidex:1.0.1'
+    provided project(path: ':base')
+    provided 'com.squareup.okhttp3:okhttp:3.3.1'
+    provided 'com.mcxiaoke.volley:library:1.0.19'
 }
