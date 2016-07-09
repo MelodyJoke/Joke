@@ -22,6 +22,8 @@ import org.jetbrains.annotations.NotNull;
  * <p>
  * 0.0.0.2: modify some methods to match methods in
  * {@link com.melody.base.template.activity.BaseActivity}
+ *
+ * @see HandlerFragment may be a better choice if you need to solve hanlder leak problem.
  */
 @SuppressWarnings("WeakerAccess, unused")
 public abstract class BaseFragment extends Fragment {
