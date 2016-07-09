@@ -30,4 +30,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     provided 'com.google.code.gson:gson:2.7'
     compile 'org.jetbrains:annotations-java5:15.0'
+    compile 'com.android.support:multidex:1.0.1'
 }
