@@ -1,11 +1,11 @@
-package com.melody.joke.application;
+package com.melody.joke.business;
 
 import android.app.Activity;
 import android.content.Intent;
 
 import com.melody.base.template.application.BaseApplication;
 import com.melody.base.template.application.UncaughtExceptionHandler;
-import com.melody.joke.MainActivity;
+import com.melody.joke.business.main.MainActivity;
 
 /**
  * description: uncaught exception handler

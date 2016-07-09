@@ -1,4 +1,4 @@
-package com.melody.joke.application;
+package com.melody.joke.business;
 
 import com.melody.base.template.application.BaseApplication;
 import com.melody.base.template.application.UncaughtExceptionHandler;
