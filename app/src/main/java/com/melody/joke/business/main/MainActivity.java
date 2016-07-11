@@ -50,7 +50,7 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
         Collections.addAll(demoList,
                 new Demo(1, "divider", "divider", null),
 
-                new Demo(2, "Activity Templates", "title", new Intent()),
+                new Demo(2, "Activity Templates", "title", null),
                 new Demo(0,
                         "EmptyActivity",
                         "An empty activity from Android official. Just extends AppCompatActivity in support-v7, provide nothing.I re-write it with my BaseActivity extends AppcompatActivity, and provide a Toolbar instead of an Actionbar.",
