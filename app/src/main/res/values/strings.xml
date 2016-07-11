@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Joke</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_empty">EmptyActivity</string>
 </resources>

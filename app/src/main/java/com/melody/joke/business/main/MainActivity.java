@@ -12,9 +12,9 @@ import android.support.v7.widget.Toolbar;
 
 import com.melody.base.template.activity.HandlerActivity;
 import com.melody.base.util.BuildUtility;
-import com.melody.base.util.LogUtility;
 import com.melody.joke.R;
 import com.melody.joke.bean.Demo;
+import com.melody.joke.business.activity.EmptyActivity;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -31,20 +31,51 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
 
     private DemoAdapter adapter;
 
-    private List<Demo> demos;
+    private List<Demo> demos, demoList;
 
-    private static List<Demo> demoList = new ArrayList<>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-    static {
+        getBundle(getIntent());
+        initViews();
+        bindListeners();
+    }
+
+    @Override
+    protected void getBundle(@NotNull Intent intent) {
+        demos = new ArrayList<>();
+        demoList = new ArrayList<>();
         Collections.addAll(demoList,
                 new Demo(1, "divider", "divider", null),
-                new Demo(2, "Activity", "title", new Intent()),
-                new Demo(0, "", "", new Intent()),
-                new Demo(0, "", "", new Intent()),
-                new Demo(0, "", "", new Intent()),
-                new Demo(0, "", "", new Intent()),
-                new Demo(0, "", "", new Intent()),
-                new Demo(0, "", "", new Intent()),
+
+                new Demo(2, "Activity Templates", "title", new Intent()),
+                new Demo(0,
+                        "EmptyActivity",
+                        "An empty activity from Android official. Just extends AppCompatActivity in support-v7, provide nothing.I re-write it with my BaseActivity extends AppcompatActivity, and provide a Toolbar instead of an Actionbar.",
+                        new Intent(mContext, EmptyActivity.class)),
+                new Demo(0,
+                        "",
+                        "",
+                        new Intent()),
+                new Demo(0,
+                        "",
+                        "",
+                        new Intent()),
+                new Demo(0,
+                        "",
+                        "",
+                        new Intent()),
+                new Demo(0,
+                        "",
+                        "",
+                        new Intent()),
+                new Demo(0,
+                        "",
+                        "",
+                        new Intent()),
+
                 new Demo(2, "Fragment", "title", new Intent()),
                 new Demo(0, "", "", new Intent()),
                 new Demo(0, "", "", new Intent()),
@@ -59,22 +90,7 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
                 new Demo(2, "Http-Retrofit", "title", new Intent()),
                 new Demo(0, "", "", new Intent()),
                 new Demo(1, "divider", "divider", null));
-    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        LogUtility.e("a", "1");
-        getBundle(getIntent());
-        initViews();
-        bindListeners();
-    }
-
-    @Override
-    protected void getBundle(@NotNull Intent intent) {
-        demos = new ArrayList<>();
         demos.addAll(demoList);
     }
 
