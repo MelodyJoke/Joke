@@ -61,7 +61,6 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
                         "BasicActivity",
                         "\t\tA basic activity from Android official. Provide a fab.",
                         new Intent(mContext, BasicActivity.class)),
-
                 new Demo(0,
                         "ScrollingActivity",
                         "\t\tA scrolling activity from Android official. Provide an expandable toolbar.",
