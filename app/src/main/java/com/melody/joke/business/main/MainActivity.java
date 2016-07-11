@@ -16,6 +16,7 @@ import com.melody.joke.R;
 import com.melody.joke.bean.Demo;
 import com.melody.joke.business.activity.BasicActivity;
 import com.melody.joke.business.activity.EmptyActivity;
+import com.melody.joke.business.activity.ScrollingActivity;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -62,9 +63,9 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
                         new Intent(mContext, BasicActivity.class)),
 
                 new Demo(0,
-                        "",
-                        "",
-                        null),
+                        "ScrollingActivity",
+                        "\t\tA scrolling activity from Android official. Provide an expandable toolbar.",
+                        new Intent(mContext, ScrollingActivity.class)),
                 new Demo(0,
                         "",
                         "",
