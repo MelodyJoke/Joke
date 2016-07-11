@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="4dp"
+                android:lineSpacingExtra="@dimen/text_space_extra"
                 android:text="\t\tA basic activity from Android official. Provide a fab and a default behavior between fab and snackbar.\n\t\tPlease click the fab below to test the behavior.\n\t\tI re-write it with my BaseActivity."
                 tools:ignore="HardcodedText" />
 

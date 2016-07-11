@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.melody.joke.business.main.MainActivity">
+    tools:context=".business.activity.EmptyActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="4dp"
+                android:lineSpacingExtra="@dimen/text_space_extra"
                 android:text="\t\tAn empty activity from Android official. Just extends AppCompatActivity in support-v7, provide nothing.\n\t\tI re-write it with my BaseActivity extends AppcompatActivity.\n\t\tProvide a Toolbar instead of an Actionbar and display a back button in the toolbar."
                 android:textAppearance="?android:textAppearanceSmall"
                 tools:ignore="HardcodedText" />

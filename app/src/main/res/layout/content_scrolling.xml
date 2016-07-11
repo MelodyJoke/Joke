@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
-        android:lineSpacingExtra="4dp"
+        android:lineSpacingExtra="@dimen/text_space_extra"
         android:text="\t\tA scrolling activity from Android official. \nProvide a fab and an expandable toolbar.\n\t\tThere are several behaviours of the toolbar.\n\t\tI re-write it with my BaseActivity."
         tools:ignore="HardcodedText" />
 

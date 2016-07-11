@@ -37,7 +37,10 @@ public class BasicActivity extends BaseActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) actionBar.setDisplayHomeAsUpEnabled(true);
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
         if (toolbar != null)
             toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                 @Override
