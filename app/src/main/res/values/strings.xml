@@ -2,4 +2,5 @@
     <string name="app_name">Joke</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_empty">EmptyActivity</string>
+    <string name="title_activity_basic">BasicActivity</string>
 </resources>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.melody.joke.business.main.MainActivity">
+    tools:context="com.melody.joke.business.activity.BasicActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -36,12 +36,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="4dp"
-                android:text="\t\tAn empty activity from Android official. Just extends AppCompatActivity in support-v7, provide nothing.\n\t\tI re-write it with my BaseActivity extends AppcompatActivity.\n\t\tProvide a Toolbar instead of an Actionbar and display a back button in the toolbar."
-                android:textAppearance="?android:textAppearanceSmall"
+                android:text="\t\tA basic activity from Android official. Provide a fab and a default behavior between fab and snackbar.\n\t\tPlease click the fab below to test the behavior.\n\t\tI re-write it with my BaseActivity."
                 tools:ignore="HardcodedText" />
 
         </LinearLayout>
-
     </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </android.support.design.widget.CoordinatorLayout>

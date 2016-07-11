@@ -96,11 +96,8 @@ public class DemoAdapter extends RecyclerView.Adapter<DemoAdapter.ViewHolder> {
         if (mDemo != null) {
             switch (getItemViewType(mPosition)) {
                 case DEMO_COMMON:
-                    if (!TextUtils.isEmpty(mDemo.getTitle()))
-                        holder.titleText.setText(mDemo.getTitle());
-
-                    if (!TextUtils.isEmpty(mDemo.getDescription()))
-                        holder.descriptionText.setText(mDemo.getDescription());
+                    holder.titleText.setText(mDemo.getTitle());
+                    holder.descriptionText.setText(mDemo.getDescription());
                     break;
 
                 case DEMO_DIVIDER:

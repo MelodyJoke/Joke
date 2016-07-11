@@ -40,6 +40,9 @@
         <activity
             android:name=".business.activity.EmptyActivity"
             android:label="@string/title_activity_empty" />
+        <activity
+            android:name=".business.activity.BasicActivity"
+            android:label="@string/title_activity_basic" />
     </application>
 
 </manifest>
