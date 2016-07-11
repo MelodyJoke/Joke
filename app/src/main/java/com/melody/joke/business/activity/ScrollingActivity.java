@@ -53,7 +53,7 @@ public class ScrollingActivity extends BaseActivity {
             });
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
-        imageView = (ImageView) findViewById(R.id.imageView);
+        imageView = (ImageView) findViewById(R.id.image);
     }
 
     @Override

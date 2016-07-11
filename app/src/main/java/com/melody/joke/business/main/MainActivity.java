@@ -102,7 +102,7 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefresh);
+        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe);
         if (swipeRefreshLayout != null) {
             if (BuildUtility.isRequired(Build.VERSION_CODES.M))
                 swipeRefreshLayout.setColorSchemeColors(
@@ -120,7 +120,7 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
                 );
         }
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        recyclerView = (RecyclerView) findViewById(R.id.recycler);
         if (recyclerView != null) {
             recyclerView.setHasFixedSize(true);
             recyclerView.setLayoutManager(new LinearLayoutManager(mContext));

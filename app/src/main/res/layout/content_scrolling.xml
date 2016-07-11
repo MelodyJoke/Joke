@@ -8,12 +8,19 @@
     tools:context="com.melody.joke.business.activity.ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:lineSpacingExtra="@dimen/text_space_extra"
-        android:text="\t\tA scrolling activity from Android official. \nProvide a fab and an expandable toolbar.\n\t\tThere are several behaviours of the toolbar.\n\t\tI re-write it with my BaseActivity."
-        tools:ignore="HardcodedText" />
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:lineSpacingExtra="@dimen/text_space_extra"
+            android:text="\t\tA scrolling activity from Android official. \nProvide a fab and an expandable toolbar.\n\t\tThere are several behaviours of the toolbar.\n\t\tI re-write it with my BaseActivity.\n\t\tAppBarLayout, CollapsingToolbarLayout and Toolbar should be pay attention to. AppBarLayout.LayoutParams has a param 'ScrollFlags', change this can get difference scroll behaviour between toolbar and the full window, it is quite interesting. 'scroll|exitUntilCollapsed|snap' and 'scroll|enterAlwaysCollapsed|snap' are combinations I recommend. The current is the first one.\n\t\tCollapsingToolbarLayout.LayoutParams has a param 'CollapseMode', this is another key point.\n\t\tSee some guides here: http://www.open-open.com/lib/view/open1438265746378.html"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
