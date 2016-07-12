@@ -45,8 +45,10 @@
             android:label="@string/title_activity_basic" />
         <activity
             android:name=".business.activity.ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme"></activity>
+            android:label="@string/title_activity_scrolling" />
+        <activity
+            android:name=".business.activity.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer" />
     </application>
 
 </manifest>

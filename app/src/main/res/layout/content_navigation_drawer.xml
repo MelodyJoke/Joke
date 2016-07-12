@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_navigation_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.melody.joke.business.activity.NavigationDrawerActivity"
+    tools:showIn="@layout/app_bar_navigation_drawer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/text_space_extra"
+            android:text="\t\tA navigation drawer activity from Android official. Provide a drawer swiped out from left. Co-operating with fragments will be better.\n\t\tIt is very suitable to be a main activity.\n\t\tI re-write it with my BaseActivity. Click fab below or back button to exit this activity."
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
