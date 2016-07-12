@@ -18,6 +18,7 @@ import com.melody.joke.business.activity.BasicActivity;
 import com.melody.joke.business.activity.EmptyActivity;
 import com.melody.joke.business.activity.NavigationDrawerActivity;
 import com.melody.joke.business.activity.ScrollingActivity;
+import com.melody.joke.business.activity.TabbedActivity;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -73,7 +74,7 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
                 new Demo(0,
                         "Tabbed Activity",
                         "\t\tA tabbed activity from Android official. Provide a tabbed framework. Co-operating with fragments will be better.",
-                        null),
+                        new Intent(mContext, TabbedActivity.class)),
                 new Demo(0,
                         "Fullscreen Activity",
                         "\t\tA fullscreen activity from Android official. Hide navigation bar.",
@@ -97,8 +98,14 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
                 new Demo(0, "", "", null),
 
                 new Demo(2, "RecyclerView Demos", "title", null),
-                new Demo(0, "", "", null),
-                new Demo(0, "", "", null),
+                new Demo(0,
+                        "ListView like",
+                        "\t\tListView like RecyclerView with refresh and load more. SwipeRefreshLayout to implement refresh operation. Another type of item to implement load-more operation. ItemTouchHelper to handle touch operations.",
+                        null),
+                new Demo(0,
+                        "Chat list",
+                        "\t\tA practical implementation of ListView like RecyclerView: Chat list.",
+                        null),
 
                 new Demo(2, "Volley Demo", "title", null),
                 new Demo(0,
@@ -109,7 +116,13 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
                 new Demo(2, "Retrofit Demo", "title", null),
                 new Demo(0,
                         "Retrofit Demo",
-                        "\t\tRetrofit is a network framework from Square. Work well with OkHttp3 from Square... This demo is a simple test for the combination of Retrofit, OkHttp3 and Gson.",
+                        "\t\tRetrofit is a network framework from Square. Work well with OkHttp3 from Square. This demo is a simple test for the combination of Retrofit, OkHttp3 and Gson.",
+                        null),
+
+                new Demo(2, "Fresco Demo", "title", null),
+                new Demo(0,
+                        "Fresco Demo",
+                        "\t\tFresco is a image framework from Facebook. This demo is a simple test for Fresco.",
                         null),
 
                 new Demo(1, "divider", "divider", null));

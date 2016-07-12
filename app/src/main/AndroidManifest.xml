@@ -49,6 +49,9 @@
         <activity
             android:name=".business.activity.NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer" />
+        <activity
+            android:name=".business.activity.TabbedActivity"
+            android:label="@string/title_activity_tabbed" />
     </application>
 
 </manifest>
