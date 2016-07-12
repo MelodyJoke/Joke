@@ -72,7 +72,7 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
                         new Intent(mContext, NavigationDrawerActivity.class)),
                 new Demo(0,
                         "Tabbed Activity",
-                        "\t\tA tabbed activity from Android official. Provide a tabbed frame. Co-operating with fragments will be better.",
+                        "\t\tA tabbed activity from Android official. Provide a tabbed framework. Co-operating with fragments will be better.",
                         null),
                 new Demo(0,
                         "Fullscreen Activity",
@@ -96,16 +96,22 @@ public class MainActivity extends HandlerActivity implements SwipeRefreshLayout.
                 new Demo(0, "", "", null),
                 new Demo(0, "", "", null),
 
-                new Demo(2, "CoordinatorLayout", "title", null),
+                new Demo(2, "RecyclerView Demos", "title", null),
                 new Demo(0, "", "", null),
                 new Demo(0, "", "", null),
-                new Demo(2, "RecyclerView", "title", null),
-                new Demo(0, "", "", null),
-                new Demo(0, "", "", null),
-                new Demo(2, "Http-Volley", "title", null),
-                new Demo(0, "", "", null),
-                new Demo(2, "Http-Retrofit", "title", null),
-                new Demo(0, "", "", null),
+
+                new Demo(2, "Volley Demo", "title", null),
+                new Demo(0,
+                        "Volley Demo",
+                        "\t\tVolley is a lightweight network framework from Google. Suitable for light and frequent net requests. This demo is a simple test for the combination of Volley, OkHttp3 and Gson.",
+                        null),
+
+                new Demo(2, "Retrofit Demo", "title", null),
+                new Demo(0,
+                        "Retrofit Demo",
+                        "\t\tRetrofit is a network framework from Square. Work well with OkHttp3 from Square... This demo is a simple test for the combination of Retrofit, OkHttp3 and Gson.",
+                        null),
+
                 new Demo(1, "divider", "divider", null));
 
         demos.addAll(demoList);
